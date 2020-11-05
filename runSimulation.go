@@ -16,17 +16,17 @@ func main() {
 var camera int
 
 const (
-	size  = 10
+	size  = 100
 	scale = 10
 )
 
 var particles []int
 
-func getParticle(x int, y int, z int) int {
-	return particles[x*size*size*4+y*size*2+z]
+func getParticle(x int, y int) int {
+	return particles[x*size*2+y]
 }
-func setParticle(x int, y int, z int, id int) {
-	particles[x*size*size*4+y*size*2+z] = id
+func setParticle(x int, y int, id int) {
+	particles[x*size*2+y] = id
 }
 
 func start() {
@@ -36,7 +36,7 @@ func start() {
 	camera = of.CreateEntity()
 	of.AddComponent(camera, of.ComponentCamera)
 	transform := of.GetComponent(camera, of.ComponentTransform).(of.Transform)
-	transform.SetPosition(mgl32.Vec3{0, 0, 500})
+	transform.SetPosition(mgl32.Vec3{0, 100, 500})
 	of.SetComponent(camera, of.ComponentTransform, transform)
 	of.SetActiveCameraEntity(camera)
 
@@ -46,26 +46,43 @@ func start() {
 	absPath := filepath.Dir(b)
 	mesh := of.LoadOBJ(absPath+"/mesh/Sphere.obj", false)
 
+	particle := of.CreateEntity()
+
+	of.AddComponent(particle, of.ComponentMesh)
+	mesh.Material = of.Material{DiffuseColor: mgl32.Vec3{
+		rand.Float32(),
+		rand.Float32(),
+		rand.Float32(),
+	}}
+	of.SetComponent(particle, of.ComponentMesh, mesh)
+
+	particleTransform := of.GetComponent(particle, of.ComponentTransform).(of.Transform)
+	particleTransform.SetPosition(
+		mgl32.Vec3{float32(-size) * scale, 0, float32(-size) * scale})
+	of.SetComponent(particle, of.ComponentTransform, particleTransform)
+
+	setParticle(0, 0, particle)
+
 	for x := 0; x < size*2; x++ {
-		for y := 0; y < size*2; y++ {
-			for z := 0; z < size*2; z++ {
-				particle := of.CreateEntity()
+		for y := 1; y < size*2; y++ {
+			particle := of.CreateEntity()
 
-				of.AddComponent(particle, of.ComponentMesh)
-				mesh.Material = of.Material{DiffuseColor: mgl32.Vec3{
-					rand.Float32(),
-					rand.Float32(),
-					rand.Float32(),
-				}}
-				of.SetComponent(particle, of.ComponentMesh, mesh)
+			meshInstant := of.AddComponent(particle, of.ComponentMeshInstant).(of.MeshInstant)
+			meshInstant.OwnEntity = particle
+			meshInstant.MeshEntity = particles[0]
+			meshInstant.Material = of.Material{DiffuseColor: mgl32.Vec3{
+				rand.Float32(),
+				rand.Float32(),
+				rand.Float32(),
+			}}
+			of.SetComponent(particle, of.ComponentMeshInstant, meshInstant)
 
-				particleTransform := of.GetComponent(particle, of.ComponentTransform).(of.Transform)
-				particleTransform.SetPosition(
-					mgl32.Vec3{float32(x) * scale, float32(y) * scale, float32(z) * scale})
-				of.SetComponent(particle, of.ComponentTransform, particleTransform)
+			particleTransform := of.GetComponent(particle, of.ComponentTransform).(of.Transform)
+			particleTransform.SetPosition(
+				mgl32.Vec3{float32(x-size) * scale, 0, float32(y-size) * scale})
+			of.SetComponent(particle, of.ComponentTransform, particleTransform)
 
-				setParticle(x, y, z, particle)
-			}
+			setParticle(x, y, particle)
 		}
 	}
 }
