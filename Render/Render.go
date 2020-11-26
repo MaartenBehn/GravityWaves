@@ -26,7 +26,8 @@ func start() {
 	camera = of.CreateEntity()
 	of.AddComponent(camera, of.ComponentCamera)
 	transform := of.GetComponent(camera, of.ComponentTransform).(of.Transform)
-	transform.SetPosition(mgl32.Vec3{0, 100, 500})
+	transform.SetPosition(mgl32.Vec3{0, 300, 0})
+	transform.SetRotaion(mgl32.Vec3{-90, 0, 0})
 	of.SetComponent(camera, of.ComponentTransform, transform)
 	of.SetActiveCameraEntity(camera)
 
@@ -38,6 +39,8 @@ const (
 	movementSpeed float32 = 100
 	mouseSpeed    float32 = 3
 )
+
+var frame int
 
 func update() {
 	fmt.Printf("FPS: %f UPS: %f \r", of.GetFPS(), of.GetUPS())
@@ -66,6 +69,8 @@ func update() {
 
 	updateGravityObjects()
 	updatePlane()
+
+	frame++
 }
 
 func stop() {

@@ -8,6 +8,8 @@ import (
 
 var gravityObjects []int
 var gravityObjectColor mgl32.Vec3
+var log [][]mgl32.Vec3
+var logSize = 10
 
 func setUpGravityObjects() {
 
@@ -27,27 +29,40 @@ func setUpGravityObjects() {
 	}
 }
 
-var roundsPerFrame = 0.1
-var frame int
+var roundsPerFrame = 0.05
+var radius = 10.0
 
 func updateGravityObjects() {
+	log = append(log, make([]mgl32.Vec3, 2))
+
 	for i, gravityObject := range gravityObjects {
 		transform := of.GetComponent(gravityObject, of.ComponentTransform).(of.Transform)
-		if i == 0 {
-			transform.SetPosition(mgl32.Vec3{
-				float32(math.Sin(float64(frame)*roundsPerFrame) * 10),
-				0,
-				float32(math.Cos(float64(frame)*roundsPerFrame) * 10),
-			})
-		} else {
-			transform.SetPosition(mgl32.Vec3{
-				float32(-math.Sin(float64(frame)*roundsPerFrame) * 10),
-				0,
-				float32(-math.Cos(float64(frame)*roundsPerFrame) * 10),
-			})
-		}
 
+		transform.SetPosition(getPosOfGravityObject(frame, i))
+
+		log[len(log)-1][i] = transform.GetPosition()
 		of.SetComponent(gravityObject, of.ComponentTransform, transform)
 	}
-	frame++
+
+	for len(log) > logSize {
+		log = append(log[:0], log[1:]...)
+	}
+}
+
+func getPosOfGravityObject(frame int, nr int) mgl32.Vec3 {
+	var pos mgl32.Vec3
+	if nr == 0 {
+		pos = mgl32.Vec3{
+			float32(math.Sin(float64(frame)*roundsPerFrame) * radius),
+			0,
+			float32(math.Cos(float64(frame)*roundsPerFrame) * radius),
+		}
+	} else {
+		pos = mgl32.Vec3{
+			float32(-math.Sin(float64(frame)*roundsPerFrame) * radius),
+			0,
+			float32(-math.Cos(float64(frame)*roundsPerFrame) * radius),
+		}
+	}
+	return pos
 }

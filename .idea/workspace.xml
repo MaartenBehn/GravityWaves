@@ -26,15 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e07c4e-fd0f-4243-9ad0-65ce54e2f5e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Render/GravityObject.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Render/Plane.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Render/Render.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RunSimulation.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Simulation/simulation.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesh/LowPolySphere.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Render/mesh/LowPolySphere.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesh/Sphere.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Render/mesh/Sphere.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runSimulation.go" beforeDir="false" afterPath="$PROJECT_DIR$/RunRender.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Render/GravityObject.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/GravityObject.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Render/Plane.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Plane.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Render/Render.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Render.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606403424491</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Working live Simulation with sin and cos function">
+      <created>1606412766776</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606412766776</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +201,8 @@
     <MESSAGE value="particle Grid" />
     <MESSAGE value="Improved ComponentManager in performace." />
     <MESSAGE value="Using LowPolySpheres and profiling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using LowPolySpheres and profiling" />
+    <MESSAGE value="Working live Simulation with sin and cos function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working live Simulation with sin and cos function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="623" y="165" width="1092" height="875" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606408856558">
@@ -214,22 +217,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606408842918" />
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1606412706803">
+    <state width="1877" height="92" key="GridCell.Tab.0.bottom" timestamp="1606419700618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1877" height="187" key="GridCell.Tab.0.center" timestamp="1606412706803">
+    <state width="1877" height="92" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
+    <state width="1877" height="92" key="GridCell.Tab.0.center" timestamp="1606419700618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1877" height="187" key="GridCell.Tab.0.left" timestamp="1606412706803">
+    <state width="1877" height="92" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
+    <state width="1877" height="92" key="GridCell.Tab.0.left" timestamp="1606419700618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1877" height="187" key="GridCell.Tab.0.right" timestamp="1606412706803">
+    <state width="1877" height="92" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
+    <state width="1877" height="92" key="GridCell.Tab.0.right" timestamp="1606419700618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="187" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
+    <state width="1877" height="92" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
     <state width="1877" height="187" key="GridCell.Tab.1.bottom" timestamp="1606412706803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -250,10 +253,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604605057056" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606403454532">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606412768651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606403454532" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412768651" />
     <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1606400074204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -59,8 +59,9 @@ func setUpPlane() {
 	}
 }
 
-var gravityMultiplier float32 = 1000.0
+var gravityMultiplier float32 = 100000.0
 var cancelGravitation = true
+var waveSpeed float32 = 1.0
 
 func updatePlane() {
 
@@ -69,18 +70,20 @@ func updatePlane() {
 		pos := transform.GetPosition()
 		pos[1] = 0
 
+		distance := mgl32.Vec3{0, 0, 0}.Sub(mgl32.Vec3{pos[0], 0, pos[2]}).Len()
 		if cancelGravitation {
-			distance := mgl32.Vec3{0, 0, 0}.Sub(mgl32.Vec3{pos[0], 0, pos[2]}).Len()
 			pos[1] += 2.0 / distance * gravityMultiplier
 		}
+		timeOfWave := frame - int(distance/waveSpeed)
 
-		for _, gravityObject := range gravityObjects {
+		posG0 := getPosOfGravityObject(timeOfWave, 0)
+		distanceG0 := posG0.Sub(mgl32.Vec3{pos[0], 0, pos[2]}).Len()
+		pos[1] -= 1 / distanceG0 * gravityMultiplier
 
-			gravityObjectTransform := of.GetComponent(gravityObject, of.ComponentTransform).(of.Transform)
-			distance := gravityObjectTransform.GetPosition().Sub(mgl32.Vec3{pos[0], 0, pos[2]}).Len()
-			pos[1] -= 1.0 / distance * gravityMultiplier
+		posG1 := getPosOfGravityObject(timeOfWave, 1)
+		distanceG1 := posG1.Sub(mgl32.Vec3{pos[0], 0, pos[2]}).Len()
+		pos[1] -= 1 / distanceG1 * gravityMultiplier
 
-		}
 		transform.SetPosition(pos)
 		of.SetComponent(point, of.ComponentTransform, transform)
 	}
