@@ -4,15 +4,18 @@ import (
 	of "OctaForceEngineGo"
 	"fmt"
 	"github.com/go-gl/mathgl/mgl32"
+	"github.com/pkg/profile"
 	"math/rand"
 	"path/filepath"
 	"runtime"
 )
 
 func main() {
+	defer profile.Start().Stop()
 	of.StartUp(start, update, stop)
 }
 
+var absPath string
 var camera int
 
 const (
@@ -20,48 +23,34 @@ const (
 	scale = 10
 )
 
-var particles []int
+var plane []int
 
-func getParticle(x int, y int) int {
-	return particles[x*size*2+y]
+func getPointInPlane(x int, y int) int {
+	return plane[x*size*2+y]
 }
-func setParticle(x int, y int, id int) {
-	particles[x*size*2+y] = id
+func setPointInPlane(x int, y int, id int) {
+	plane[x*size*2+y] = id
 }
+func setUpPlane() {
+	plane = make([]int, size*size*size*8)
 
-func start() {
-	of.SetMaxFPS(60)
-	of.SetMaxUPS(30)
+	point := of.CreateEntity()
 
-	camera = of.CreateEntity()
-	of.AddComponent(camera, of.ComponentCamera)
-	transform := of.GetComponent(camera, of.ComponentTransform).(of.Transform)
-	transform.SetPosition(mgl32.Vec3{0, 100, 500})
-	of.SetComponent(camera, of.ComponentTransform, transform)
-	of.SetActiveCameraEntity(camera)
-
-	particles = make([]int, size*size*size*8)
-
-	_, b, _, _ := runtime.Caller(0)
-	absPath := filepath.Dir(b)
-	mesh := of.LoadOBJ(absPath+"/mesh/Sphere.obj", false)
-
-	particle := of.CreateEntity()
-
-	of.AddComponent(particle, of.ComponentMesh)
+	mesh := of.LoadOBJ(absPath+"/mesh/LowPolySphere.obj", false)
+	of.AddComponent(point, of.ComponentMesh)
 	mesh.Material = of.Material{DiffuseColor: mgl32.Vec3{
 		rand.Float32(),
 		rand.Float32(),
 		rand.Float32(),
 	}}
-	of.SetComponent(particle, of.ComponentMesh, mesh)
+	of.SetComponent(point, of.ComponentMesh, mesh)
 
-	particleTransform := of.GetComponent(particle, of.ComponentTransform).(of.Transform)
-	particleTransform.SetPosition(
+	pointTransform := of.GetComponent(point, of.ComponentTransform).(of.Transform)
+	pointTransform.SetPosition(
 		mgl32.Vec3{float32(-size) * scale, 0, float32(-size) * scale})
-	of.SetComponent(particle, of.ComponentTransform, particleTransform)
+	of.SetComponent(point, of.ComponentTransform, pointTransform)
 
-	setParticle(0, 0, particle)
+	setPointInPlane(0, 0, point)
 
 	for x := 0; x < size*2; x++ {
 		for y := 1; y < size*2; y++ {
@@ -69,7 +58,7 @@ func start() {
 
 			meshInstant := of.AddComponent(particle, of.ComponentMeshInstant).(of.MeshInstant)
 			meshInstant.OwnEntity = particle
-			meshInstant.MeshEntity = particles[0]
+			meshInstant.MeshEntity = plane[0]
 			meshInstant.Material = of.Material{DiffuseColor: mgl32.Vec3{
 				rand.Float32(),
 				rand.Float32(),
@@ -82,9 +71,26 @@ func start() {
 				mgl32.Vec3{float32(x-size) * scale, 0, float32(y-size) * scale})
 			of.SetComponent(particle, of.ComponentTransform, particleTransform)
 
-			setParticle(x, y, particle)
+			setPointInPlane(x, y, particle)
 		}
 	}
+}
+
+func start() {
+	_, b, _, _ := runtime.Caller(0)
+	absPath = filepath.Dir(b)
+
+	of.SetMaxFPS(60)
+	of.SetMaxUPS(30)
+
+	camera = of.CreateEntity()
+	of.AddComponent(camera, of.ComponentCamera)
+	transform := of.GetComponent(camera, of.ComponentTransform).(of.Transform)
+	transform.SetPosition(mgl32.Vec3{0, 100, 500})
+	of.SetComponent(camera, of.ComponentTransform, transform)
+	of.SetActiveCameraEntity(camera)
+
+	setUpPlane()
 }
 
 const (

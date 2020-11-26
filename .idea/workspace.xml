@@ -19,16 +19,24 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e07c4e-fd0f-4243-9ad0-65ce54e2f5e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mesh/LowPolySphere.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiling.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesh/Cube.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesh/Cube.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesh/Sphere.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesh/Sphere.obj" beforeDir="false" afterPath="$PROJECT_DIR$/mesh/Sphere.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runSimulation.go" beforeDir="false" afterPath="$PROJECT_DIR$/runSimulation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/RendererInstancing.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/RendererInstancing.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +52,7 @@
   </component>
   <component name="GOROOT" path="$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../OctaForceEngineGo" />
   </component>
   <component name="ProjectId" id="1jsu1WWcFqesTwY2QVJiRumrrBl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,7 +66,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/profiling.bat" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,7 +80,7 @@
       <recent name="H:\dev\Go\src\GravityWaves" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Shell Script.Profiling">
     <configuration name="go build GravityWaves" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GravityWaves" />
       <working_directory value="$PROJECT_DIR$" />
@@ -82,6 +90,21 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="Profiling" type="ShConfigurationType">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/profiling.bat" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build GravityWaves" />
+      <item itemvalue="Shell Script.Profiling" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build GravityWaves" />
@@ -104,11 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604607300450</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Improved ComponentManager in performace.">
+      <created>1606400629372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606400629372</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.shader" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -121,7 +154,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -132,39 +165,49 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="particle Grid" />
-    <option name="LAST_COMMIT_MESSAGE" value="particle Grid" />
+    <MESSAGE value="Improved ComponentManager in performace." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved ComponentManager in performace." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604605042572">
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606402758157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604605042572" />
-    <state width="1877" height="184" key="GridCell.Tab.0.bottom" timestamp="1604607749973">
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606402758157" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606402747708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604607749973" />
-    <state width="1877" height="184" key="GridCell.Tab.0.center" timestamp="1604607749973">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606402747708" />
+    <state width="1877" height="216" key="GridCell.Tab.0.bottom" timestamp="1606402995738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604607749973" />
-    <state width="1877" height="184" key="GridCell.Tab.0.left" timestamp="1604607749973">
+    <state width="1877" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606402995738" />
+    <state width="1877" height="216" key="GridCell.Tab.0.center" timestamp="1606402995738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604607749973" />
-    <state width="1877" height="184" key="GridCell.Tab.0.right" timestamp="1604607749973">
+    <state width="1877" height="216" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606402995738" />
+    <state width="1877" height="216" key="GridCell.Tab.0.left" timestamp="1606402995738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604607749973" />
+    <state width="1877" height="216" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606402995738" />
+    <state width="1877" height="216" key="GridCell.Tab.0.right" timestamp="1606402995738">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="216" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606402995738" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1604605057056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604605057056" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1604607301855">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606400641360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604607301855" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606400641360" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1606400074204">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606400074204" />
   </component>
 </project>
