@@ -30,7 +30,6 @@
       <change beforePath="$PROJECT_DIR$/Render/GravityObject.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/GravityObject.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Render/Plane.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Plane.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Render/Render.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Render.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Camera.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Camera.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/RendererInstancing.go" beforeDir="false" />
@@ -211,7 +210,8 @@
     <MESSAGE value="Improved ComponentManager in performace." />
     <MESSAGE value="Using LowPolySpheres and profiling" />
     <MESSAGE value="Working live Simulation with sin and cos function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working live Simulation with sin and cos function" />
+    <MESSAGE value="Deviding Instance and normal Rendering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deviding Instance and normal Rendering" />
   </component>
   <component name="WindowStateProjectService">
     <state x="478" y="296" key="#GOROOT" timestamp="1606462249415">
@@ -232,45 +232,45 @@
     </state>
     <state x="526" y="193" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606462111509" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606408842918" />
-    <state width="1324" height="196" key="GridCell.Tab.0.bottom" timestamp="1606470214461">
+    <state width="1324" height="216" key="GridCell.Tab.0.bottom" timestamp="1606470566368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606470214461" />
+    <state width="1324" height="216" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
     <state width="1877" height="92" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1324" height="196" key="GridCell.Tab.0.center" timestamp="1606470214460">
+    <state width="1324" height="216" key="GridCell.Tab.0.center" timestamp="1606470566368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="196" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606470214460" />
+    <state width="1324" height="216" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
     <state width="1877" height="92" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1324" height="196" key="GridCell.Tab.0.left" timestamp="1606470214459">
+    <state width="1324" height="216" key="GridCell.Tab.0.left" timestamp="1606470566368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="196" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606470214459" />
+    <state width="1324" height="216" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
     <state width="1877" height="92" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1324" height="196" key="GridCell.Tab.0.right" timestamp="1606470214461">
+    <state width="1324" height="216" key="GridCell.Tab.0.right" timestamp="1606470566368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="196" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606470214461" />
+    <state width="1324" height="216" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
     <state width="1877" height="92" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1324" height="216" key="GridCell.Tab.1.bottom" timestamp="1606470194113">
+    <state width="1324" height="216" key="GridCell.Tab.1.bottom" timestamp="1606470566193">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606470194113" />
+    <state width="1324" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606470566193" />
     <state width="1877" height="187" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1324" height="216" key="GridCell.Tab.1.center" timestamp="1606470194112">
+    <state width="1324" height="216" key="GridCell.Tab.1.center" timestamp="1606470566192">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="216" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1606470194112" />
+    <state width="1324" height="216" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1606470566192" />
     <state width="1877" height="187" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1324" height="216" key="GridCell.Tab.1.left" timestamp="1606470194112">
+    <state width="1324" height="216" key="GridCell.Tab.1.left" timestamp="1606470566192">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="216" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1606470194112" />
+    <state width="1324" height="216" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1606470566192" />
     <state width="1877" height="187" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1324" height="216" key="GridCell.Tab.1.right" timestamp="1606470194113">
+    <state width="1324" height="216" key="GridCell.Tab.1.right" timestamp="1606470566192">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1606470194113" />
+    <state width="1324" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1606470566192" />
     <state width="1877" height="187" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
     <state x="132" y="57" width="1092" height="607" key="MergeDialog" timestamp="1606465098015">
       <screen x="0" y="0" width="1366" height="728" />
@@ -281,9 +281,10 @@
     </state>
     <state x="328" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606470527014" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604605057056" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606412768651">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="393" y="168" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1606470794467">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="393" y="168" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606470794467" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412768651" />
     <state x="491" y="280" width="383" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606465116731">
       <screen x="0" y="0" width="1366" height="728" />
