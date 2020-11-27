@@ -38,9 +38,9 @@ func updateGravityObjects() {
 	for i, gravityObject := range gravityObjects {
 		transform := of.GetComponent(gravityObject, of.ComponentTransform).(of.Transform)
 
-		transform.SetPosition(getPosOfGravityObject(frame, i))
+		transform.Position = getPosOfGravityObject(frame, i)
 
-		log[len(log)-1][i] = transform.GetPosition()
+		log[len(log)-1][i] = transform.Position
 		of.SetComponent(gravityObject, of.ComponentTransform, transform)
 	}
 

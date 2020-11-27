@@ -30,8 +30,7 @@ func setUpPlane() {
 	of.SetComponent(point, of.ComponentMesh, mesh)
 
 	pointTransform := of.GetComponent(point, of.ComponentTransform).(of.Transform)
-	pointTransform.SetPosition(
-		mgl32.Vec3{float32(-size) * scale, 0, float32(-size) * scale})
+	pointTransform.Position = mgl32.Vec3{float32(-size) * scale, 0, float32(-size) * scale}
 	of.SetComponent(point, of.ComponentTransform, pointTransform)
 
 	setPointInPlane(0, 0, point)
@@ -50,8 +49,7 @@ func setUpPlane() {
 			of.SetComponent(particle, of.ComponentMeshInstant, meshInstant)
 
 			particleTransform := of.GetComponent(particle, of.ComponentTransform).(of.Transform)
-			particleTransform.SetPosition(
-				mgl32.Vec3{float32(x-size) * scale, 0, float32(y-size) * scale})
+			particleTransform.Position = mgl32.Vec3{float32(x-size) * scale, 0, float32(y-size) * scale}
 			of.SetComponent(particle, of.ComponentTransform, particleTransform)
 
 			setPointInPlane(x, y, particle)
@@ -67,7 +65,7 @@ func updatePlane() {
 
 	for _, point := range plane {
 		transform := of.GetComponent(point, of.ComponentTransform).(of.Transform)
-		pos := transform.GetPosition()
+		pos := transform.Position
 		pos[1] = 0
 
 		distance := mgl32.Vec3{0, 0, 0}.Sub(mgl32.Vec3{pos[0], 0, pos[2]}).Len()
@@ -84,7 +82,7 @@ func updatePlane() {
 		distanceG1 := posG1.Sub(mgl32.Vec3{pos[0], 0, pos[2]}).Len()
 		pos[1] -= 1 / distanceG1 * gravityMultiplier
 
-		transform.SetPosition(pos)
+		transform.Position = pos
 		of.SetComponent(point, of.ComponentTransform, transform)
 	}
 

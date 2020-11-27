@@ -26,8 +26,8 @@ func start() {
 	camera = of.CreateEntity()
 	of.AddComponent(camera, of.ComponentCamera)
 	transform := of.GetComponent(camera, of.ComponentTransform).(of.Transform)
-	transform.SetPosition(mgl32.Vec3{0, 300, 0})
-	transform.SetRotaion(mgl32.Vec3{-90, 0, 0})
+	transform.Position = mgl32.Vec3{0, 300, 0}
+	transform.SetRotaionInDegree(mgl32.Vec3{-90, 0, 0})
 	of.SetComponent(camera, of.ComponentTransform, transform)
 	of.SetActiveCameraEntity(camera)
 
@@ -62,8 +62,8 @@ func update() {
 	}
 	if of.MouseButtonPressed(of.MouseButtonLeft) {
 		mouseMovement := of.GetMouseMovement()
-		transform.Rotate(mgl32.Vec3{-1, 0, 0}.Mul(mouseMovement.Y() * deltaTime * mouseSpeed))
-		transform.Rotate(mgl32.Vec3{0, -1, 0}.Mul(mouseMovement.X() * deltaTime * mouseSpeed))
+		transform.RotateInDegree(mgl32.Vec3{-1, 0, 0}.Mul(mouseMovement.Y() * deltaTime * mouseSpeed))
+		transform.RotateInDegree(mgl32.Vec3{0, -1, 0}.Mul(mouseMovement.X() * deltaTime * mouseSpeed))
 	}
 	of.SetComponent(camera, of.ComponentTransform, transform)
 

@@ -20,7 +20,7 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -30,6 +30,12 @@
       <change beforePath="$PROJECT_DIR$/Render/GravityObject.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/GravityObject.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Render/Plane.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Plane.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Render/Render.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Render.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Camera.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Camera.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/RendererInstancing.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Transform.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Transform.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShader.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +49,9 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="$PROJECT_DIR$/../../../../Program Files/Go" />
+  <component name="GOROOT" path="$USER_HOME$/sdk/go1.15.1" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../OctaForceEngineGo" />
   </component>
   <component name="ProjectId" id="1jsu1WWcFqesTwY2QVJiRumrrBl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,16 +63,19 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/runRender.go" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,7 +91,7 @@
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/runRender.go" />
+      <filePath value="$PROJECT_DIR$/RunRender.go" />
       <package value="GravityWaves" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
@@ -104,13 +113,13 @@
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/runSimulation.go" />
+      <filePath value="$PROJECT_DIR$/RunSimulation.go" />
       <package value="GravityWaves" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="Profiling" type="ShConfigurationType">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/profiling.bat" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
@@ -184,7 +193,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -205,61 +214,95 @@
     <option name="LAST_COMMIT_MESSAGE" value="Working live Simulation with sin and cos function" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="165" width="1092" height="875" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606408856558">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="478" y="296" key="#GOROOT" timestamp="1606462249415">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="478" y="296" key="#GOROOT/0.0.1366.728@0.0.1366.728" timestamp="1606462249415" />
+    <state x="443" y="65" width="777" height="663" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606462082081">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="443" y="65" width="777" height="663" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606462082081" />
     <state x="623" y="165" width="1092" height="875" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606408856558" />
     <state width="592" height="466" key="DebuggerActiveHint" timestamp="1606411930880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="592" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606411930880" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606408842918">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="526" y="193" width="424" height="479" key="FileChooserDialogImpl" timestamp="1606462111509">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="526" y="193" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606462111509" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606408842918" />
-    <state width="1877" height="92" key="GridCell.Tab.0.bottom" timestamp="1606419700618">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1324" height="196" key="GridCell.Tab.0.bottom" timestamp="1606470214461">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1324" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606470214461" />
     <state width="1877" height="92" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1877" height="92" key="GridCell.Tab.0.center" timestamp="1606419700618">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1324" height="196" key="GridCell.Tab.0.center" timestamp="1606470214460">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1324" height="196" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606470214460" />
     <state width="1877" height="92" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1877" height="92" key="GridCell.Tab.0.left" timestamp="1606419700618">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1324" height="196" key="GridCell.Tab.0.left" timestamp="1606470214459">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1324" height="196" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606470214459" />
     <state width="1877" height="92" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1877" height="92" key="GridCell.Tab.0.right" timestamp="1606419700618">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1324" height="196" key="GridCell.Tab.0.right" timestamp="1606470214461">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1324" height="196" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606470214461" />
     <state width="1877" height="92" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1877" height="187" key="GridCell.Tab.1.bottom" timestamp="1606412706803">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1324" height="216" key="GridCell.Tab.1.bottom" timestamp="1606470194113">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1324" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606470194113" />
     <state width="1877" height="187" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1877" height="187" key="GridCell.Tab.1.center" timestamp="1606412706803">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1324" height="216" key="GridCell.Tab.1.center" timestamp="1606470194112">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1324" height="216" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1606470194112" />
     <state width="1877" height="187" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1877" height="187" key="GridCell.Tab.1.left" timestamp="1606412706803">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1324" height="216" key="GridCell.Tab.1.left" timestamp="1606470194112">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1324" height="216" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1606470194112" />
     <state width="1877" height="187" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1877" height="187" key="GridCell.Tab.1.right" timestamp="1606412706803">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1324" height="216" key="GridCell.Tab.1.right" timestamp="1606470194113">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1324" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1606470194113" />
     <state width="1877" height="187" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1604605057056">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="132" y="57" width="1092" height="607" key="MergeDialog" timestamp="1606465098015">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="132" y="57" width="1092" height="607" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1606465098015" />
+    <state x="328" y="0" key="SettingsEditor" timestamp="1606470527014">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="328" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606470527014" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604605057056" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606412768651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412768651" />
+    <state x="491" y="280" width="383" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606465116731">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="491" y="280" width="383" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1606465116731" />
     <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1606400074204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606400074204" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go</url>
+          <line>103</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
