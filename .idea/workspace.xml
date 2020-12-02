@@ -27,15 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e07c4e-fd0f-4243-9ad0-65ce54e2f5e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Simulation/mesh/LowPolySphere.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Simulation/mesh/Sphere.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/simulation.go" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/simulation.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShader.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShaderInstancing.shader" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShaderInstancing.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +213,8 @@
     <MESSAGE value="Working live Simulation with sin and cos function" />
     <MESSAGE value="Deviding Instance and normal Rendering" />
     <MESSAGE value="Logging Gl Errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logging Gl Errors" />
+    <MESSAGE value="Both Pipelines working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Both Pipelines working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="752" y="178" key="#GOPATH" timestamp="1606831615372">
@@ -253,26 +248,26 @@
     </state>
     <state x="526" y="193" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606462111509" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606831610482" />
-    <state width="1877" height="2" key="GridCell.Tab.0.bottom" timestamp="1606934198908">
+    <state width="1877" height="21" key="GridCell.Tab.0.bottom" timestamp="1606934944924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
-    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606934198908" />
-    <state width="1877" height="2" key="GridCell.Tab.0.center" timestamp="1606934198908">
+    <state width="1877" height="21" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606934944924" />
+    <state width="1877" height="21" key="GridCell.Tab.0.center" timestamp="1606934944924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
-    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606934198908" />
-    <state width="1877" height="2" key="GridCell.Tab.0.left" timestamp="1606934198908">
+    <state width="1877" height="21" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606934944924" />
+    <state width="1877" height="21" key="GridCell.Tab.0.left" timestamp="1606934944924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
-    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606934198908" />
-    <state width="1877" height="2" key="GridCell.Tab.0.right" timestamp="1606934198908">
+    <state width="1877" height="21" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606934944924" />
+    <state width="1877" height="21" key="GridCell.Tab.0.right" timestamp="1606934944924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
-    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606934198908" />
+    <state width="1877" height="21" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606934944924" />
     <state width="1877" height="7" key="GridCell.Tab.1.bottom" timestamp="1606928271810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -302,11 +297,11 @@
     </state>
     <state x="328" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606470527014" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606845144833" />
-    <state x="552" y="240" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1606929257382">
+    <state x="817" y="406" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1606934459934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="393" y="168" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606470794467" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606929257382" />
+    <state x="817" y="406" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606934459934" />
     <state x="694" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1606932995919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
