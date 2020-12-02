@@ -16,12 +16,12 @@ func setUpGravityObjects() {
 	gravityObjects = make([]int, 2)
 	gravityObjectColor = mgl32.Vec3{1, 0, 0}
 
-	mesh := of.LoadOBJ(absPath+"/mesh/LowPolySphere.obj", false)
 	for i, gravityObject := range gravityObjects {
 
 		gravityObject = of.CreateEntity()
 
-		of.AddComponent(gravityObject, of.ComponentMesh)
+		mesh := of.AddComponent(gravityObject, of.ComponentMesh).(of.Mesh)
+		mesh.LoadOBJ(absPath+"/mesh/LowPolySphere.obj", false)
 		mesh.Material = of.Material{DiffuseColor: gravityObjectColor}
 		of.SetComponent(gravityObject, of.ComponentMesh, mesh)
 

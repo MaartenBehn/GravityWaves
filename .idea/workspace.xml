@@ -19,8 +19,8 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -29,12 +29,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Render/GravityObject.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/GravityObject.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Render/Plane.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Plane.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Render/Render.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Render.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/ComponentManager.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/ComponentManager.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/RendererInstancing.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Transform.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Transform.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Shader.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Shader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/shader/fragmentShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/shader/fragmentShader.shader" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShader.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShaderInstancing.shader" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/shader/vertexShaderInstancing.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="$USER_HOME$/sdk/go1.15.1" />
+  <component name="GOROOT" path="C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../OctaForceEngineGo" />
   </component>
@@ -74,7 +76,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -186,19 +188,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -214,78 +204,91 @@
     <option name="LAST_COMMIT_MESSAGE" value="Deviding Instance and normal Rendering" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="478" y="296" key="#GOROOT" timestamp="1606462249415">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="478" y="296" key="#GOROOT/0.0.1366.728@0.0.1366.728" timestamp="1606462249415" />
-    <state x="443" y="65" width="777" height="663" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606462082081">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="443" y="65" width="777" height="663" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606462082081" />
-    <state x="623" y="165" width="1092" height="875" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606408856558" />
-    <state width="592" height="466" key="DebuggerActiveHint" timestamp="1606411930880">
+    <state x="752" y="178" key="#GOPATH" timestamp="1606831615372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="592" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606411930880" />
-    <state x="526" y="193" width="424" height="479" key="FileChooserDialogImpl" timestamp="1606462111509">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="752" y="178" key="#GOPATH/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606831615372" />
+    <state x="672" y="423" key="#GOROOT" timestamp="1606831592592">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="478" y="296" key="#GOROOT/0.0.1366.728@0.0.1366.728" timestamp="1606462249415" />
+    <state x="672" y="423" key="#GOROOT/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606831592592" />
+    <state x="623" y="140" width="1092" height="900" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606831056254">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="443" y="65" width="777" height="663" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606462082081" />
+    <state x="623" y="140" width="1092" height="900" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606831056254" />
+    <state x="715" y="223" key="#xdebugger.evaluate" timestamp="1606844944774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="223" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606844944774" />
+    <state width="714" height="466" key="DebuggerActiveHint" timestamp="1606927165115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="714" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606927165115" />
+    <state x="740" y="275" width="424" height="479" key="FileChooserDialogImpl" timestamp="1606831610482">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="526" y="193" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606462111509" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606408842918" />
-    <state width="1324" height="216" key="GridCell.Tab.0.bottom" timestamp="1606470566368">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606831610482" />
+    <state width="1877" height="121" key="GridCell.Tab.0.bottom" timestamp="1606928772648">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
-    <state width="1877" height="92" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1324" height="216" key="GridCell.Tab.0.center" timestamp="1606470566368">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="121" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606928772648" />
+    <state width="1877" height="121" key="GridCell.Tab.0.center" timestamp="1606928772648">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
-    <state width="1877" height="92" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1324" height="216" key="GridCell.Tab.0.left" timestamp="1606470566368">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="121" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606928772648" />
+    <state width="1877" height="121" key="GridCell.Tab.0.left" timestamp="1606928772648">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
-    <state width="1877" height="92" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1324" height="216" key="GridCell.Tab.0.right" timestamp="1606470566368">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="121" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606928772648" />
+    <state width="1877" height="121" key="GridCell.Tab.0.right" timestamp="1606928772648">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606470566368" />
-    <state width="1877" height="92" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606419700618" />
-    <state width="1324" height="216" key="GridCell.Tab.1.bottom" timestamp="1606470566193">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="121" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606928772648" />
+    <state width="1877" height="7" key="GridCell.Tab.1.bottom" timestamp="1606928271810">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606470566193" />
-    <state width="1877" height="187" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1324" height="216" key="GridCell.Tab.1.center" timestamp="1606470566192">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="7" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606928271810" />
+    <state width="1877" height="7" key="GridCell.Tab.1.center" timestamp="1606928271810">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1606470566192" />
-    <state width="1877" height="187" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1324" height="216" key="GridCell.Tab.1.left" timestamp="1606470566192">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="7" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606928271810" />
+    <state width="1877" height="7" key="GridCell.Tab.1.left" timestamp="1606928271810">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1606470566192" />
-    <state width="1877" height="187" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
-    <state width="1324" height="216" key="GridCell.Tab.1.right" timestamp="1606470566192">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="7" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606928271810" />
+    <state width="1877" height="7" key="GridCell.Tab.1.right" timestamp="1606928271810">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1324" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1606470566192" />
-    <state width="1877" height="187" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412706803" />
+    <state width="1877" height="7" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606928271810" />
     <state x="132" y="57" width="1092" height="607" key="MergeDialog" timestamp="1606465098015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="132" y="57" width="1092" height="607" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1606465098015" />
-    <state x="328" y="0" key="SettingsEditor" timestamp="1606470527014">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1606845144833">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="328" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606470527014" />
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604605057056" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606845144833" />
     <state x="393" y="168" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1606470794467">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="393" y="168" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606470794467" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606412768651" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1606837608041">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606837608041" />
     <state x="491" y="280" width="383" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606465116731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -296,14 +299,10 @@
     <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606400074204" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go</url>
-          <line>103</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="*(*&quot;github.com/go-gl/mathgl/mgl32.Vec3&quot;)(824634049292)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
