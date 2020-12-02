@@ -24,10 +24,10 @@ func setUpPlane() {
 	baseColor = mgl32.Vec3{0.5, 0.5, 0.5}
 
 	point := of.CreateEntity()
-	mesh := of.AddComponent(point, of.ComponentMeshInstantRoot).(of.MeshInstantRoot)
+	mesh := of.AddComponent(point, of.ComponentMesh).(of.Mesh)
 	mesh.LoadOBJ(absPath+"/mesh/LowPolySphere.obj", false)
 	mesh.Material = of.Material{DiffuseColor: baseColor}
-	of.SetComponent(point, of.ComponentMeshInstantRoot, mesh)
+	of.SetComponent(point, of.ComponentMesh, mesh)
 
 	pointTransform := of.GetComponent(point, of.ComponentTransform).(of.Transform)
 	pointTransform.Position = mgl32.Vec3{float32(-size) * scale, 0, float32(-size) * scale}
