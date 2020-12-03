@@ -43,6 +43,9 @@ const (
 )
 
 var frame int
+var lastKey = 0
+
+const keyColldown = 10
 
 func update() {
 	fmt.Printf("FPS: %f UPS: %f \r", of.GetFPS(), of.GetUPS())
@@ -68,8 +71,9 @@ func update() {
 		transform.Rotate(mgl32.Vec3{0, -1, 0}.Mul(mouseMovement.X() * deltaTime * mouseSpeed))
 	}
 
-	if of.KeyPressed(of.Key1) {
+	if of.KeyPressed(of.Key1) && (frame > lastKey+keyColldown) {
 		cancelGravitation = !cancelGravitation
+		lastKey = frame
 	}
 
 	if of.KeyPressed(of.Key2) {
