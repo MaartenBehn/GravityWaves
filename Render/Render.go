@@ -26,8 +26,13 @@ func start() {
 	camera = of.CreateEntity()
 	of.AddComponent(camera, of.ComponentCamera)
 	transform := of.GetComponent(camera, of.ComponentTransform).(of.Transform)
+
 	transform.Position = mgl32.Vec3{0, 300, 0}
 	transform.SetRotaionInDegree(mgl32.Vec3{-90, 0, 0})
+
+	//transform.Position = mgl32.Vec3{0, 0, 1000}
+	//transform.SetRotaionInDegree(mgl32.Vec3{0, 0, 0})
+
 	of.SetComponent(camera, of.ComponentTransform, transform)
 	of.SetActiveCameraEntity(camera)
 
