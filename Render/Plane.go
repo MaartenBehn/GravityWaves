@@ -58,7 +58,7 @@ func setUpPlane() {
 }
 
 var gravityMultiplier float32 = 100000.0
-var cancelGravitation = true
+var cancelGravitation = false
 var waveSpeed float32 = 1.0
 
 func updatePlane() {

@@ -1,1 +1,1 @@
-go tool pprof --pdf H:\dev\Go\src\FluidSim\main.exe C:\Users\maart\AppData\Local\Temp\profile066578371\cpu.pprof > file.pdf
+go tool pprof --pdf D:\dev\Go\src\GravityWaves\RunRender.exe C:\Users\maart\AppData\Local\Temp\profile640792783\cpu.pprof > file.pdf
