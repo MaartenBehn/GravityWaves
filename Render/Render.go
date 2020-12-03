@@ -20,8 +20,8 @@ func start() {
 	_, b, _, _ := runtime.Caller(0)
 	absPath = filepath.Dir(b)
 
-	of.SetMaxFPS(60)
-	of.SetMaxUPS(30)
+	of.MaxFPS = 60
+	of.MaxUPS = 30
 
 	camera = of.CreateEntity()
 	of.AddComponent(camera, of.ComponentCamera)

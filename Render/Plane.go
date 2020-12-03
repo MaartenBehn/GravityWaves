@@ -9,7 +9,7 @@ var plane []int
 var baseColor mgl32.Vec3
 
 const (
-	size  = 30
+	size  = 20
 	scale = 10
 )
 
@@ -43,7 +43,6 @@ func setUpPlane() {
 			particle := of.CreateEntity()
 
 			meshInstant := of.AddComponent(particle, of.ComponentMeshInstant).(of.MeshInstant)
-			meshInstant.OwnEntity = particle
 			meshInstant.MeshEntity = plane[0]
 			meshInstant.Material = of.Material{DiffuseColor: baseColor}
 			of.SetComponent(particle, of.ComponentMeshInstant, meshInstant)
