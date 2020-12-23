@@ -26,7 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e07c4e-fd0f-4243-9ad0-65ce54e2f5e0" name="Default Changelist" comment="Adjusted to new Instance System">
+      <change afterPath="$PROJECT_DIR$/Simulation/Simulation.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/mesh/LowPolySphere.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/mesh/Sphere.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/simulation.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,7 @@
         <entry key="$PROJECT_DIR$/../OctaForceEngineGo" value="NormalAndInstanceRendering" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../OctaForceEngineGo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jsu1WWcFqesTwY2QVJiRumrrBl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
