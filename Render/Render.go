@@ -10,7 +10,7 @@ import (
 
 func Init() {
 	//defer profile.Start().Stop()
-	of.StartUp(start, update, stop)
+	of.StartUp(start, update, stop, "Gravity Waves")
 }
 
 var absPath string
