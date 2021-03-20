@@ -9,7 +9,7 @@ var plane []int
 var baseColor mgl32.Vec3
 
 const (
-	size  = 20
+	size  = 100
 	scale = 10
 )
 
@@ -24,10 +24,10 @@ func setUpPlane() {
 	baseColor = mgl32.Vec3{0.5, 0.5, 0.5}
 
 	point := of.CreateEntity()
-	mesh := of.AddComponent(point, of.ComponentMesh).(of.Mesh)
+	mesh := of.Mesh{}
 	mesh.LoadOBJ(absPath+"/mesh/LowPolySphere.obj", false)
 	mesh.Material = of.Material{DiffuseColor: baseColor}
-	of.SetComponent(point, of.ComponentMesh, mesh)
+	of.AddComponent(point, of.ComponentMesh, mesh)
 
 	pointTransform := of.GetComponent(point, of.ComponentTransform).(of.Transform)
 	pointTransform.Position = mgl32.Vec3{float32(-size) * scale, 0, float32(-size) * scale}
@@ -42,14 +42,14 @@ func setUpPlane() {
 			}
 			particle := of.CreateEntity()
 
-			meshInstant := of.AddComponent(particle, of.ComponentMeshInstant).(of.MeshInstant)
+			particleTransform := of.Transform{}
+			particleTransform.Position = mgl32.Vec3{float32(x-size) * scale, 0, float32(y-size) * scale}
+			of.AddComponent(particle, of.ComponentTransform, particleTransform)
+
+			meshInstant := of.MeshInstant{}
 			meshInstant.MeshEntity = plane[0]
 			meshInstant.Material = of.Material{DiffuseColor: baseColor}
-			of.SetComponent(particle, of.ComponentMeshInstant, meshInstant)
-
-			particleTransform := of.GetComponent(particle, of.ComponentTransform).(of.Transform)
-			particleTransform.Position = mgl32.Vec3{float32(x-size) * scale, 0, float32(y-size) * scale}
-			of.SetComponent(particle, of.ComponentTransform, particleTransform)
+			of.AddComponent(particle, of.ComponentMeshInstant, meshInstant)
 
 			setPointInPlane(x, y, particle)
 		}

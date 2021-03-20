@@ -25,12 +25,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64e07c4e-fd0f-4243-9ad0-65ce54e2f5e0" name="Default Changelist" comment="Adjusted to new Instance System">
-      <change afterPath="$PROJECT_DIR$/Simulation/Simulation.go" afterDir="false" />
+    <list default="true" id="64e07c4e-fd0f-4243-9ad0-65ce54e2f5e0" name="Default Changelist" comment="reset">
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Entity.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/mesh/LowPolySphere.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/mesh/Sphere.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/simulation.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Render/GravityObject.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/GravityObject.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Render/Plane.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Plane.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Render/Render.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Render.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Camera.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Camera.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/ComponentManager.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/ComponentManager.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Transform.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Transform.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +49,15 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.15.1" />
+  <component name="GOROOT" path="C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/../OctaForceEngineGo" value="NormalAndInstanceRendering" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../OctaForceEngineGo" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1jsu1WWcFqesTwY2QVJiRumrrBl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -63,13 +69,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Simulation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,12 +86,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\dev\Go\src\GravityWaves\Render" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\dev\Go\src\GravityWaves\Simulation" />
       <recent name="H:\dev\Go\src\GravityWaves" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\dev\Go\src\GravityWaves\Render" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.Render">
@@ -129,6 +136,8 @@
       <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
       <option name="INTERPRETER_PATH" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <envs />
       <method v="2" />
     </configuration>
     <list>
@@ -207,14 +216,30 @@
     <MESSAGE value="Performance improvments is able to hold 30 UPS with 50.000 Instances" />
     <MESSAGE value="Keys for Cam Pos" />
     <MESSAGE value="switch key1 only every 10th frame" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch key1 only every 10th frame" />
+    <MESSAGE value="Adjusted to new Instance System" />
+    <MESSAGE value="reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="reset" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="GoApplicationRunConfiguration">
-        <watch expression="*(*&quot;github.com/go-gl/mathgl/mgl32.Vec3&quot;)(824634049292)" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../OctaForceEngineGo/Main.go</url>
+          <line>47</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Render/Render.go</url>
+          <line>30</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Render/Render.go</url>
+          <line>25</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GravityWaves$go_test_GravityWaves.out" NAME="go test GravityWaves Coverage Results" MODIFIED="1607009910167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

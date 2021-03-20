@@ -20,10 +20,10 @@ func setUpGravityObjects() {
 
 		gravityObject = of.CreateEntity()
 
-		mesh := of.AddComponent(gravityObject, of.ComponentMesh).(of.Mesh)
+		mesh := of.Mesh{}
 		mesh.LoadOBJ(absPath+"/mesh/LowPolySphere.obj", false)
 		mesh.Material = of.Material{DiffuseColor: gravityObjectColor}
-		of.SetComponent(gravityObject, of.ComponentMesh, mesh)
+		of.AddComponent(gravityObject, of.ComponentMesh, mesh)
 
 		gravityObjects[i] = gravityObject
 	}

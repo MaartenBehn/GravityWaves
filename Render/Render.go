@@ -24,13 +24,12 @@ func start() {
 	of.MaxUPS = 30
 
 	camera = of.CreateEntity()
-	of.AddComponent(camera, of.ComponentCamera)
-	transform := of.GetComponent(camera, of.ComponentTransform).(of.Transform)
 
+	transform := of.Transform{}
 	transform.Position = mgl32.Vec3{0, 0, 1500}
 	transform.SetRotaion(mgl32.Vec3{0, 0, 0})
-
-	of.SetComponent(camera, of.ComponentTransform, transform)
+	of.AddComponent(camera, of.ComponentTransform, transform)
+	of.AddComponent(camera, of.ComponentCamera, nil)
 	of.SetActiveCameraEntity(camera)
 
 	setUpPlane()
