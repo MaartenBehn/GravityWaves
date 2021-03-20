@@ -26,16 +26,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e07c4e-fd0f-4243-9ad0-65ce54e2f5e0" name="Default Changelist" comment="reset">
-      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Entity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/changes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/data.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/sceduler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/state.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/task.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/test/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/transform.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Render/GravityObject.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/GravityObject.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Render/Plane.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Plane.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Render/Render.go" beforeDir="false" afterPath="$PROJECT_DIR$/Render/Render.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Camera.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Camera.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/ComponentManager.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/ComponentManager.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Transform.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/Transform.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../OctaForceEngineGo" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1jsu1WWcFqesTwY2QVJiRumrrBl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -218,16 +225,12 @@
     <MESSAGE value="switch key1 only every 10th frame" />
     <MESSAGE value="Adjusted to new Instance System" />
     <MESSAGE value="reset" />
-    <option name="LAST_COMMIT_MESSAGE" value="reset" />
+    <MESSAGE value="Read Write test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read Write test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/../OctaForceEngineGo/Main.go</url>
-          <line>47</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/Render/Render.go</url>
           <line>30</line>
