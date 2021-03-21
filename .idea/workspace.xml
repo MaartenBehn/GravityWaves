@@ -26,16 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e07c4e-fd0f-4243-9ad0-65ce54e2f5e0" name="Default Changelist" comment="reset">
-      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/worker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/test/profiling.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/changes.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/data.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/sceduler.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/sceduler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/state.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/state.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/task.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/task.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/test/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/test/main_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/transform.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/transform.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/worker.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OctaForceEngineGo/V2/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -95,6 +92,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\Go\src\OctaForceEngineGo\V2\test" />
       <recent name="D:\dev\Go\src\GravityWaves\Simulation" />
       <recent name="H:\dev\Go\src\GravityWaves" />
     </key>
@@ -103,6 +101,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Go Test.TestOctaForce in OctaForceEngineGo/V2/test (1)">
+    <configuration name="profiling" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="GravityWaves" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\dev\Go\src\OctaForceEngineGo\V2\test" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="profiling.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Render" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="GravityWaves" />
       <working_directory value="$PROJECT_DIR$" />
@@ -177,10 +184,12 @@
       <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/V2/test" />
       <item itemvalue="Shell Script.Profiling" />
       <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/V2/test (1)" />
+      <item itemvalue="Batch.profiling" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/V2/test (1)" />
+        <item itemvalue="Batch.profiling" />
         <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/V2/test" />
       </list>
     </recent_temporary>
@@ -258,7 +267,8 @@
     <MESSAGE value="reset" />
     <MESSAGE value="Read Write test" />
     <MESSAGE value="new ecs system Idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="new ecs system Idea" />
+    <MESSAGE value="new multi thread system" />
+    <option name="LAST_COMMIT_MESSAGE" value="new multi thread system" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GravityWaves$go_test_GravityWaves.out" NAME="go test GravityWaves Coverage Results" MODIFIED="1607009910167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
