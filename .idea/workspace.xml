@@ -26,13 +26,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64e07c4e-fd0f-4243-9ad0-65ce54e2f5e0" name="Default Changelist" comment="reset">
-      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/test/profiling.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/camera.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/dispatcher.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/mesh.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/meshInstant.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/test/mesh/LowPolySphere.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/test/profiling.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OctaForceEngineGo/utility.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/sceduler.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/sceduler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/state.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/state.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/test/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/test/main_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/V2/worker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Camera.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Entity.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Material.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/material.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Mesh.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Renderer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/render.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Shader.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/shader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Texture.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Transform.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/transform.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Utility.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/sceduler.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/sceduler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/state.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/state.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/task.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/task.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/test/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/test/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/test/profiling.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/transform.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/V2/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/worker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OctaForceEngineGo/Window.go" beforeDir="false" afterPath="$PROJECT_DIR$/../OctaForceEngineGo/window.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +101,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OctaForceEngineGo/V2/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OctaForceEngineGo/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,15 +112,27 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\Go\src\OctaForceEngineGo\test" />
       <recent name="D:\dev\Go\src\OctaForceEngineGo\V2\test" />
       <recent name="D:\dev\Go\src\GravityWaves\Simulation" />
       <recent name="H:\dev\Go\src\GravityWaves" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\Go\src\OctaForceEngineGo" />
+      <recent name="D:\dev\Go\src\OctaForceEngineGo\V2" />
       <recent name="H:\dev\Go\src\GravityWaves\Render" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestOctaForce in OctaForceEngineGo/V2/test (1)">
+  <component name="RunManager" selected="Go Test.TestOctaForce in OctaForceEngineGo/test (1)">
+    <configuration name="profiling (1)" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="GravityWaves" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\dev\Go\src\OctaForceEngineGo\test" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="profiling.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="profiling" type="BatchConfigurationType" factoryName="Batch" temporary="true">
       <module name="GravityWaves" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,12 +185,23 @@
       <pattern value="^\QTestOctaForce\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestOctaForce in OctaForceEngineGo/V2/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestOctaForce in OctaForceEngineGo/test (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="GravityWaves" />
-      <working_directory value="$PROJECT_DIR$/../OctaForceEngineGo/V2/test" />
+      <working_directory value="$PROJECT_DIR$/../OctaForceEngineGo/test" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="OctaForceEngineGo/V2/test" />
+      <package value="OctaForceEngineGo/test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestOctaForce\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestOctaForce in OctaForceEngineGo/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GravityWaves" />
+      <working_directory value="$PROJECT_DIR$/../OctaForceEngineGo/test" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="OctaForceEngineGo/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestOctaForce\E$" />
@@ -178,19 +221,23 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Batch.profiling" />
       <item itemvalue="Go Build.Render" />
       <item itemvalue="Go Build.Simulate" />
       <item itemvalue="Go Build.Simulate and Render" />
-      <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/V2/test" />
-      <item itemvalue="Shell Script.Profiling" />
       <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/V2/test (1)" />
-      <item itemvalue="Batch.profiling" />
+      <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/test" />
+      <item itemvalue="Shell Script.Profiling" />
+      <item itemvalue="Batch.profiling (1)" />
+      <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/test (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/test (1)" />
+        <item itemvalue="Batch.profiling (1)" />
+        <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/test" />
         <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/V2/test (1)" />
         <item itemvalue="Batch.profiling" />
-        <item itemvalue="Go Test.TestOctaForce in OctaForceEngineGo/V2/test" />
       </list>
     </recent_temporary>
   </component>
@@ -268,9 +315,27 @@
     <MESSAGE value="Read Write test" />
     <MESSAGE value="new ecs system Idea" />
     <MESSAGE value="new multi thread system" />
-    <option name="LAST_COMMIT_MESSAGE" value="new multi thread system" />
+    <MESSAGE value="performance test" />
+    <option name="LAST_COMMIT_MESSAGE" value="performance test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../OctaForceEngineGo/test/main_test.go</url>
+          <line>46</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoTestRunConfiguration">
+        <watch expression="*(*&quot;[][]*OctaForceEngineGo.Task&quot;)(9205648)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GravityWaves$TestOctaForce_in_OctaForceEngineGo_test.out" NAME="TestOctaForce in OctaForceEngineGo/test Coverage Results" MODIFIED="1616364377480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GravityWaves$go_test_GravityWaves.out" NAME="go test GravityWaves Coverage Results" MODIFIED="1607009910167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
